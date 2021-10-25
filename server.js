@@ -22,7 +22,7 @@ const client = require('socket.io')(serverPort, {
 
 
 // Connect to mongo
-mongo.connect('mongodb://127.0.0.1/Mongochat', function(err, db){
+mongo.connect('mongodb://I-khan:root@chatapplication-shard-00-00.ylpfc.mongodb.net:27017,chatapplication-shard-00-01.ylpfc.mongodb.net:27017,chatapplication-shard-00-02.ylpfc.mongodb.net:27017/Mongochat?ssl=true&replicaSet=atlas-eikf7l-shard-0&authSource=admin&retryWrites=true&w=majority', function(err, db){
     if(err){
         throw err;
     }
